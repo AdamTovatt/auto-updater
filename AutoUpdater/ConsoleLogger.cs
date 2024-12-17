@@ -11,7 +11,8 @@
 
         public void Log(string output)
         {
-            Console.WriteLine($"{DateTime.Now}: {output}");
+            if (LoggingEnabled)
+                Console.WriteLine($"{DateTime.Now}: {output}");
         }
     }
 }
